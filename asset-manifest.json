@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/triplebyte-spa/static/css/main.13063441.chunk.css",
+    "main.js": "/triplebyte-spa/static/js/main.262f0222.chunk.js",
+    "main.js.map": "/triplebyte-spa/static/js/main.262f0222.chunk.js.map",
+    "runtime-main.js": "/triplebyte-spa/static/js/runtime-main.d2d69bc4.js",
+    "runtime-main.js.map": "/triplebyte-spa/static/js/runtime-main.d2d69bc4.js.map",
+    "static/js/2.7a05eb69.chunk.js": "/triplebyte-spa/static/js/2.7a05eb69.chunk.js",
+    "static/js/2.7a05eb69.chunk.js.map": "/triplebyte-spa/static/js/2.7a05eb69.chunk.js.map",
+    "index.html": "/triplebyte-spa/index.html",
+    "precache-manifest.aac5e8fdfabb255f516af8534025f860.js": "/triplebyte-spa/precache-manifest.aac5e8fdfabb255f516af8534025f860.js",
+    "service-worker.js": "/triplebyte-spa/service-worker.js",
+    "static/css/main.13063441.chunk.css.map": "/triplebyte-spa/static/css/main.13063441.chunk.css.map",
+    "static/js/2.7a05eb69.chunk.js.LICENSE": "/triplebyte-spa/static/js/2.7a05eb69.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2d69bc4.js",
+    "static/js/2.7a05eb69.chunk.js",
+    "static/css/main.13063441.chunk.css",
+    "static/js/main.262f0222.chunk.js"
+  ]
+}
