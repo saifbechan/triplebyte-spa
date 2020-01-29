@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import { OctalContainer } from './octal.styles';
 
-const Octal = ({ values }) => (
+export const Octal = ({ values }) => (
   <OctalContainer>{parseInt(values.join(''), 2)}</OctalContainer>
 );
 
