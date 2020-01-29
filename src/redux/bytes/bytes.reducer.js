@@ -1,7 +1,7 @@
 import BytesActionTypes from './bytes.types';
 
 const INITIAL_STATE = {
-  values: [0, 0, 0]
+  values: new Array(24).fill(0)
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
