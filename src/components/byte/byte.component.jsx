@@ -5,7 +5,7 @@ import { toggleByte } from '../../redux/bytes/bytes.actions';
 
 import { ByteContainer } from './byte.styles';
 
-const Byte = ({ idx, toggleByte, children }) => (
+export const Byte = ({ idx, toggleByte, children }) => (
   <ByteContainer onClick={() => toggleByte(idx)}>{children}</ByteContainer>
 );
 
