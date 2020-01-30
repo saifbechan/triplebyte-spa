@@ -3,13 +3,16 @@ import { Provider } from 'react-redux';
 import { render, fireEvent } from '@testing-library/react';
 import configureStore from 'redux-mock-store';
 
-import Byte, { Byte as BytePure } from './byte.component.jsx';
-
-import { toggleByte } from '../../redux/bytes/bytes.actions';
+import Byte from './byte.component';
 
 const mockStore = configureStore([]);
 
 let store;
+let renderedByte;
+
+const byteValue = 1;
+const idx = 5;
+const toggleByte = jest.fn();
 
 beforeEach(() => {
   store = mockStore({
@@ -17,31 +20,26 @@ beforeEach(() => {
   });
 
   store.dispatch = jest.fn();
+
+  renderedByte = render(
+    <Provider store={store}>
+      <Byte idx={idx} toggleByte={toggleByte}>
+        {byteValue}
+      </Byte>
+    </Provider>
+  );
 });
 
 it('renders children correctly', () => {
-  const { getByText } = render(<BytePure>9</BytePure>);
-  const linkElement = getByText(/9/i);
-  expect(linkElement).toBeInTheDocument();
-});
-
-it('calls correct function on click', () => {
-  const toggleByte = jest.fn();
-  const { getByText } = render(
-    <BytePure idx={5} toggleByte={toggleByte}>
-      22
-    </BytePure>
-  );
-  fireEvent.click(getByText(/22/i));
-  expect(toggleByte).toHaveBeenCalledWith(5);
+  const { asFragment } = renderedByte;
+  expect(asFragment()).toMatchSnapshot();
 });
 
 it('calls dispatch correctly on click', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <Byte idx={5}>22</Byte>
-    </Provider>
-  );
-  fireEvent.click(getByText(/22/i));
-  expect(store.dispatch).toHaveBeenCalledWith(toggleByte(5));
+  const { getByText } = renderedByte;
+  fireEvent.click(getByText(new RegExp(byteValue, 'i')));
+  expect(store.dispatch).toHaveBeenCalledWith({
+    payload: idx,
+    type: 'TOGGLE_BYTE'
+  });
 });

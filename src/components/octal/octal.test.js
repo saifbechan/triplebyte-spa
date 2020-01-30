@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { render, cleanup } from '@testing-library/react';
 import configureStore from 'redux-mock-store';
 
-import Octal, { Octal as OctalPure } from './octal.component';
+import Octal from './octal.component';
 
 const mockStore = configureStore([]);
 
@@ -16,13 +16,6 @@ beforeEach(() => {
 afterEach(cleanup);
 
 it('renders correctly', () => {
-  const { asFragment } = render(
-    <OctalPure values={[0, 0, 0, 1, 0, 0, 1, 1, 0, 1]} />
-  );
-  expect(asFragment()).toMatchSnapshot();
-});
-
-it('renders correctly from state', () => {
   const { asFragment } = render(
     <Provider store={store}>
       <Octal />

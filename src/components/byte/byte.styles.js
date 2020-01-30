@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// eslint-disable-next-line import/prefer-default-export
 export const ByteContainer = styled.div`
   color: white;
   cursor: pointer;
@@ -12,17 +13,10 @@ export const ByteContainer = styled.div`
     color: grey;
   }
 
-  &:nth-child(-n + 16) {
+  &:nth-child(n + 9):nth-child(-n + 16) {
     color: grey;
     &:hover {
       color: white;
-    }
-  }
-
-  &:nth-child(-n + 8) {
-    color: white;
-    &:hover {
-      color: grey;
     }
   }
 `;
