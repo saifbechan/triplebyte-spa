@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKD emnyUS"
+  >
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      1
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      1
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      1
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      0
+    </div>
+    <div
+      class="sc-AykKC hZQdx"
+    >
+      1
+    </div>
+  </div>
+</DocumentFragment>
+`;

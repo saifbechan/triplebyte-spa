@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AykKC dkqCea"
+  >
+    <div />
+    <div />
+  </div>
+</DocumentFragment>
+`;

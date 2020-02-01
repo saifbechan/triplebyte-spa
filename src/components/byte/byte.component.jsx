@@ -13,7 +13,7 @@ const Byte = ({ idx, toggleByte, children }) => (
 Byte.propTypes = {
   idx: PropTypes.number.isRequired,
   toggleByte: PropTypes.func.isRequired,
-  children: PropTypes.func.isRequired
+  children: PropTypes.number.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

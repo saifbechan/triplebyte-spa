@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 
 const toggleByte = value => (value ? 0 : 1);
 
-const cartReducer = (state = INITIAL_STATE, action) => {
+const bytesReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case BytesActionTypes.TOGGLE_BYTE:
       return {
@@ -20,4 +20,4 @@ const cartReducer = (state = INITIAL_STATE, action) => {
   }
 };
 
-export default cartReducer;
+export default bytesReducer;
